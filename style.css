@@ -10,11 +10,14 @@
 }
 * {
     font-family: 'Lora', serif;
+    scroll-behavior: smooth;
 }
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 header {
     background-color: #DDD0D1;
@@ -52,9 +55,14 @@ header {
     text-transform: uppercase;
     padding-left: 2rem;
     font-size:  3rem;
+    color: #222;
 }
 a, p, ul, ol, li {
     font-size: 2rem;
+}
+ul {
+    padding: 2rem 0 0 0;
+    margin: 0;
 }
 
 .nav-link{
@@ -62,26 +70,29 @@ a, p, ul, ol, li {
     line-height: 5rem;
     color: #222;
 }
+.nav-link, .about-me, .my-code, .experince, .education,.language  {
+    color: #222;
+}
 .photo {
     overflow: hidden;
     border: .5rem solid white;
     border-radius: 50%;
-    max-height: 20vh;
-    max-width: 20vh;
+    max-height: 18vw;
+    max-width: 18vw;
     margin: 0 auto;
 
 }
 .profile {
     position: absolute;
     top: 0;
+    bottom: 0;
     padding: 8rem 4rem 0 4rem;
     margin-left: 4rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    row-gap: 12rem;
+    row-gap: 18rem;
     max-width: 30%;
-    height: 100%;
     background-color: #B39E9F;
     color: white;
 }
@@ -92,8 +103,12 @@ a, p, ul, ol, li {
     flex-direction: column;
     align-items: flex-start;
     row-gap: 3rem;
-    margin-left:40%;
+    margin-left: 40%;
+    padding-top: 5rem
 
+}
+.about-me{
+    max-width: 50vw;
 }
 .arrow{
     display: inline-block;
@@ -102,4 +117,40 @@ a, p, ul, ol, li {
     border-top: 1rem solid #DDD0D1;
     border-right: 1rem solid #DDD0D1;
     transform: rotate(45deg);
+}
+.code-conteiner {
+    background-color: rgb(238, 236, 236);
+    margin-top: 2rem;
+}
+.code {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.icon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    padding-right: 5rem;
+}
+.nav-item, .skills-item, .contacts-item {
+    list-style: none;
+}
+.train-list ::marker {
+    color: #DDD0D1;
+    font-size: 3rem;
+}
+.contacts-list {
+    padding: 2rem 0 0;
+}
+.about{
+    padding-top: 2rem;
+}
+.nav-item :hover {
+    color: white;
+    text-decoration:overline;
+}
+.cont_link {
+    text-decoration: none;
+    color: white;
 }
