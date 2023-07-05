@@ -8,8 +8,8 @@
     src: url(./assets/fonts/Lora-Bold.ttf);
     font-weight: 600;
 }
-html{
-    font-size: 10px;
+* {
+    font-family: 'Lora', serif;
 }
 body {
     display: flex;
@@ -18,44 +18,88 @@ body {
 }
 header {
     background-color: #DDD0D1;
-    min-height: 30vh
+    min-height: 20vh
 }
 .wrapper {
     max-width: 144rem;
     margin: 0 auto;
+    padding-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+    row-gap: 8rem;
 }
 .nav-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-h1 {
-    margin-top: 4rem;
+.title-name {
     text-align: center;
-    font: 3.4rem 'Lora';
+    font-size: 6rem;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 }
+.title-prof {
+    text-transform: uppercase;
+    font-size:  3rem;
+}
+.title-profinfo {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    font-size:  3rem;
+}
+a, p, ul, ol, li {
+    font-size: 2rem;
+}
+
 .nav-link{
     padding: 0 2rem;
     line-height: 5rem;
+    color: #222;
 }
 .photo {
-    display: flex;
     overflow: hidden;
-    border: 0.2rem solid white;
+    border: .5rem solid white;
     border-radius: 50%;
-    max-height: 30vh;
-    max-width: 30vh;
+    max-height: 20vh;
+    max-width: 20vh;
     margin: 0 auto;
 
 }
 .profile {
     position: absolute;
     top: 0;
+    padding: 8rem 4rem 0 4rem;
     margin-left: 4rem;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
+    row-gap: 12rem;
     max-width: 30%;
-    height: 100vh;
+    height: 100%;
     background-color: #B39E9F;
+    color: white;
+}
+.prof-info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 3rem;
+    margin-left:40%;
+
+}
+.arrow{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-top: 1rem solid #DDD0D1;
+    border-right: 1rem solid #DDD0D1;
+    transform: rotate(45deg);
 }
