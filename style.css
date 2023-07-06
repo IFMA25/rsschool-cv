@@ -56,6 +56,7 @@ header {
     padding-left: 2rem;
     font-size:  3rem;
     color: #222;
+    background-color: white;
 }
 a, p, ul, ol, li {
     font-size: 2rem;
@@ -150,6 +151,9 @@ ul {
 }
 .experince{
     margin-top: 2rem;
+}
+.education p{
+    padding-top: 2rem;
 }
 .icon {
     display: inline-block;
