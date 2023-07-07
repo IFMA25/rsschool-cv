@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Lora';
+    src: url(./assets/fonts/Lora-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Lora';
+    src: url(./assets/fonts/Lora-Bold.ttf);
+    font-weight: 600;
+}
+* {
+    font-family: 'Lora', serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+header {
+    background-color: #DDD0D1;
+    min-height: 20vh
+}
+.wrapper {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+    row-gap: 8rem;
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.title-name {
+    text-align: center;
+    font-size: 6rem;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.title-prof {
+    text-transform: uppercase;
+    font-size:  3rem;
+}
+.title-profinfo {
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    font-size:  3rem;
+    color: #222;
+    background-color: white;
+}
+a, p, ul, ol, li {
+    font-size: 2rem;
+}
+ul {
+    padding: 2rem 0 0 0;
+    margin: 0;
+}
+
+.nav-link{
+    padding: 0 2rem;
+    line-height: 5rem;
+    color: #222;
+}
+.nav-link, .about-me, .my-code, .experince, .education,.language  {
+    color: #222;
+}
+.photo {
+    overflow: hidden;
+    border: .5rem solid white;
+    border-radius: 50%;
+    max-height: 20vw;
+    max-width: 20vw;
+    margin: 0 auto;
+
+}
+.profile {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 8rem 4rem 0 4rem;
+    margin-left: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 18rem;
+    max-width: 30%;
+    background-color: #B39E9F;
+    color: white;
+}
+.prof-info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 3rem;
+    margin-left: 40%;
+    padding: 5rem 0 5rem
+
+}
+.about-me{
+    max-width: 50vw;
+}
+.arrow{
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-top: 1rem solid #DDD0D1;
+    border-right: 1rem solid #DDD0D1;
+    transform: rotate(45deg);
+}
+.code-conteiner {
+    background-color: rgb(238, 236, 236);
+    margin-top: 2rem;
+}
+.code {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.project-wrapper{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   column-gap: 20rem;
+   margin: 2rem 0 2rem;
+}
+.project-img{
+    max-width: 15rem;
+    max-height: 15rem;
+    overflow: visible;
+}
+.project-img span {
+    font-size: 2.4rem;
+    font-family: 'Lora';
+    font-weight: 600;
+    color: #222;
+}
+.project-img img{
+    margin-bottom: 1rem;
+}
+.experince{
+    margin-top: 2rem;
+}
+.education p{
+    padding-top: 2rem;
+}
+.icon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    padding-right: 5rem;
+}
+.nav-item, .skills-item, .contacts-item {
+    list-style: none;
+}
+.train-list ::marker {
+    color: #DDD0D1;
+    font-size: 3rem;
+}
+.contacts-list {
+    padding: 2rem 0 0;
+}
+.about{
+    padding-top: 2rem;
+}
+.nav-item{
+    font-weight: 600;
+}
+.nav-item :hover {
+    color: white;
+    text-decoration:overline;
+}
+.cont_link {
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #DDD0D1;
+    min-height: 20vh;
+    margin: 0 auto;
+}
+.year, .github-inna {
+    width: 7rem;
+    height: 7rem;
+}
+.logo-RSschool {
+    width: 5rem;
+    height: 5rem;
+}
+.year {
+    font-size: 4rem;
+    font-family: 'Lora-Bold';
+    color: #222;
+    font-weight: 600;
+}
+@media screen and (max-width: 1374px) {
+    .nav-link{
+        padding: 0 1.5rem;
+    }
+}
+@media screen and (max-width: 1285px) {
+    .nav-link{
+        padding: 0 1rem;
+    }
+}
+@media screen and (max-width: 1190px) {
+    .nav-link{
+        padding: 0 .5rem;
+    }
+    .nav-list a{
+        font-size: 1.9rem;
+    }
+}
+@media screen and (max-width: 1040px) {
+    .profile{
+        max-width: 25vw;
+        padding: 8rem 2rem;
+    }
+}
+@media screen and (max-width: 820px) {
+    .prof-info{
+        margin-left: 35%;
+    }
+  }
