@@ -79,6 +79,7 @@ a {
 /* Make images easier to work with */
 img,
 picture {
+  width: auto;
   height: 100%;
   display: block;
 }
